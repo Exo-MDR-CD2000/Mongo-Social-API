@@ -1,4 +1,5 @@
 const Thought = require('../models/Thought');
+const User = require('../models/User');
 
 module.exports = {
     async getThoughts(req, res) {
@@ -10,7 +11,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    async getThoughtById(req, res) {
+    async getThoughtById(req, res) { // route for this is /api/thoughts/:id
         try {
             const dbThoughtData = await Thought.findOne({ _id: req.params.id })
             .select("-__v");
@@ -23,7 +24,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    async createThought(req, res) {
+    async createThought(req, res) { // route for this is /api/thoughts
         try {
             const { thoughtText, username, userId } = req.body;
             const dbThoughtData = await Thought.create({ thoughtText, username, userId });
