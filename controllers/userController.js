@@ -59,7 +59,8 @@ module.exports = {
             // delete associated thoughts
 
             //await Thought.deleteMany({ username: dbUserData.username });
-
+            
+            // come back to this later if I want to fix this thought deletion issue
             res.json(dbUserData);
         } catch (err) {
             res.status(500).json(err);
