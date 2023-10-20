@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const Thought = require("../models/Thought");
 
 module.exports = {
     async getUsers(req, res) {
@@ -56,11 +57,10 @@ module.exports = {
                 return res.status(404).json({ message: "No user with this id!" });
             }
 
-            // delete associated thoughts
+            // delete associated thoughts. Now working!
 
-            //await Thought.deleteMany({ username: dbUserData.username });
+            await Thought.deleteMany({ username: dbUserData.username });
             
-            // come back to this later if I want to fix this thought deletion issue
             res.json(dbUserData);
         } catch (err) {
             res.status(500).json(err);
