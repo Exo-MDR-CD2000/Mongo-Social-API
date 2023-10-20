@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 // Define schema for User
 
-const UserSchema = new Schema(
+const userSchema = new Schema(
   {
     username: {
       // these are the fields that will be used to query the database

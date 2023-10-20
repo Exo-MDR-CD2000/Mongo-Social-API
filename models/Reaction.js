@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, Types } = require("mongoose");
 
 // reaction will be a schema only used by the Thought model
 
