@@ -24,3 +24,6 @@ router.route('/:id')
     .get(getThoughtById)
     .put(updateThoughtById)
     .delete(deleteThoughtById);
+
+
+module.exports = router;
