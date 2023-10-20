@@ -39,10 +39,6 @@ module.exports = {
             res.status(500).json(err);
         }
     }
-
-    
-    
-    
     // example json body for creating a thought:
     // {
     //     "thoughtText": "Here's a cool thought...",
@@ -54,7 +50,21 @@ module.exports = {
     
     
     
-    
+    //TODO: add routes for updating and deleting thoughts
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // After that, add routes for posting new reactions to thoughts and deleting reactions from thoughts.
     
     
     
