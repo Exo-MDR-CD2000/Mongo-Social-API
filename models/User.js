@@ -20,14 +20,14 @@ const userSchema = new Schema(
         "Please enter a valid e-mail address",
       ],
     },
-    thoughts: [
+    thoughts: [ // array of _id values referencing the Thought model
       // these are the fields that will be used to query the database
       {
         type: Schema.Types.ObjectId,
         ref: "thought",
       },
     ],
-    friends: [
+    friends: [ // array of _id values referencing the User model (self-reference)
       // these are the fields that will be used to query the database
       {
         type: Schema.Types.ObjectId,
@@ -48,7 +48,7 @@ const userSchema = new Schema(
 // Now make a virtual property `friendCount` that retrieves the length of the user's friends array field on query.
 
 
-UserSchema
+userSchema
   .virtual('friendCount')
   .get(function () {
     return this.friends.length;
