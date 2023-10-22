@@ -5,6 +5,8 @@ const { Schema, Types } = require("mongoose");
 function dateFormat(timestamp) {
   return new Date(timestamp).toLocaleDateString();
 }
+// terminal give me a dateFormat error for some reason even though the createdAt field was working fine before it.
+// this date function above is a temporary fix to remove the date error. It does remove the full date string and trunkates it to just MM/DD/YYYY.
 
 const reactionSchema = new Schema(
   {
