@@ -2,6 +2,10 @@ const { Schema, Types } = require("mongoose");
 
 // reaction will be a schema only used by the Thought model
 
+function dateFormat(timestamp) {
+  return new Date(timestamp).toLocaleDateString();
+}
+
 const reactionSchema = new Schema(
   {
     reactionId: {
