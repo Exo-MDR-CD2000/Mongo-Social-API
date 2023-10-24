@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 package-lock.json
+data2.js
+seed2.js
