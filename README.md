@@ -21,6 +21,7 @@ A custom built API was made in order to create the back end for a mockup social 
     - Replace `:id` with the user id you wish to update. Use the same JSON body for creating a new user
   - To delete an existing User: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id`
     - Replace `:id` with the user id you wish to delete
+    - Any associated thoughts or reactions with the user will also be remove upon deletion.
   - Friends Functionality
     - This is server side only and will not appear on the AtlasDB side. 
     - To add a new friend use: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id/friends/:friend_id`
@@ -58,7 +59,7 @@ A custom built API was made in order to create the back end for a mockup social 
 
 As stated above, Insomnia is advised to view and test the routes. This demo video should help visually explain how one can go about testing the routes in insomnia:
 
-[Demo tutorial](WIP)
+[Demo tutorial](https://drive.google.com/file/d/1luIL_rFtXdUVDKrU5uP7O2JL0Nduw9Jk/view?usp=sharing)
 
 
 
