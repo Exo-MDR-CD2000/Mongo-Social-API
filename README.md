@@ -7,7 +7,7 @@ A custom built API was made in order to create the back end for a mockup social 
 
 ## Usage
 
-- Go to: [Heroku Deployed App](https://pure-depths-01409-8304d9d8effa.herokuapp.com/)
+- Go to: [Heroku Deployed App](https://vast-citadel-62912-a11c18d835c2.herokuapp.com/)
   - It's best to use Insomnia or other relevant application to view and test routes.
 - User
   - Use the following URL path to view Users: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users`
@@ -61,7 +61,11 @@ As stated above, Insomnia is advised to view and test the routes. This demo vide
 
 [Demo tutorial](https://drive.google.com/file/d/1luIL_rFtXdUVDKrU5uP7O2JL0Nduw9Jk/view?usp=sharing)
 
+## Deployment Link(s)
 
+- [Github Repo](https://github.com/Exo-MDR-CD2000/Mongo-Social-API)
+
+- [Heroku Deployed](https://vast-citadel-62912-a11c18d835c2.herokuapp.com/)
 
 ## Credits
 
