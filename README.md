@@ -3,9 +3,11 @@ Social platform API tool using NoSQL database
 
 ## Description
 
-## Installation
+A custom built API was made in order to create the back end for a mockup social network web app. Users can post new thoughts and leave reactions to exisiting thoughts (akin to posting on a site and then leaving comments). Express.js was used for routing, MongoDB was used to create the database, as well as mongoose for model creation. This project was then deployed to Heroku and also linked to AtlasDB for cloud hosting database. The Heroku link below is the deployed link but it requires extra steps to view the data.
 
-- No need to install anything. Go to: [Heroku](https://pure-depths-01409-8304d9d8effa.herokuapp.com/)
+## Usage
+
+- Go to: [Heroku Deployed App](https://pure-depths-01409-8304d9d8effa.herokuapp.com/)
   - It's best to use Insomnia or other relevant application to view and test routes.
 - User
   - Use the following URL path to view Users: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users`
@@ -21,9 +23,9 @@ Social platform API tool using NoSQL database
     - Replace `:id` with the user id you wish to delete
   - Friends Functionality
     - This is server side only and will not appear on the AtlasDB side. 
-    - To add a new friend use: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id/friend/:friend_id`
+    - To add a new friend use: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id/friends/:friend_id`
       - Replace `:id` with user id you wish to access the friend's list and replace `:friend_id` with which friend you want to add
-    - To delete a friend: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id/friend/:friend_id`
+    - To delete a friend: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/users/:id/friends/:friend_id`
       - Works similary to adding a friend
 - Thoughts
   - To get all thoughts: `https://vast-citadel-62912-a11c18d835c2.herokuapp.com/api/thoughts`
@@ -52,7 +54,11 @@ Social platform API tool using NoSQL database
     - Replace `:reaction_id` with the id of the reaction you want to remove.
     - Check all thoughts if you have trouble deleting a certain reaction
 
-## Usage
+## Installation/Demo
+
+As stated above, Insomnia is advised to view and test the routes. This demo video should help visually explain how one can go about testing the routes in insomnia:
+
+[Demo tutorial](WIP)
 
 
 
